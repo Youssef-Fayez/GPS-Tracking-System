@@ -11,14 +11,6 @@ typedef enum {
     GPIO_PIN5,          /**< GPIO Pin 5 */
     GPIO_PIN6,          /**< GPIO Pin 6 */
     GPIO_PIN7,          /**< GPIO Pin 7 */
-    GPIO_PIN8,          /**< GPIO Pin 8 */
-    GPIO_PIN9,          /**< GPIO Pin 9 */
-    GPIO_PIN10,         /**< GPIO Pin 10 */
-    GPIO_PIN11,         /**< GPIO Pin 11 */
-    GPIO_PIN12,         /**< GPIO Pin 12 */
-    GPIO_PIN13,         /**< GPIO Pin 13 */
-    GPIO_PIN14,         /**< GPIO Pin 14 */
-    GPIO_PIN15,         /**< GPIO Pin 15 */
 } GPIO_PIN;
 
 typedef enum {
@@ -26,6 +18,7 @@ typedef enum {
     PORTB,
     PORTC,
     PORTD,
+    PORTE,
     PORTF,
 } GPIO_PORTS;
 
@@ -37,12 +30,14 @@ typedef enum {
 typedef enum {
     INPUT,
     OUTPUT,
+    VARYING,
 }GPIO_MODE;
 
 void GPIO_Ports_Init(u8 port , u8 mode);
-void GPIO_Set_Port_value(u8 port , u8 value);
-void GPIO_Set_Pin_Mode(u8 port , u8 pin , u8 value);
-void GPIO_Set_Pin_value(u8 port , u8 pin , u8 value);
+void GPIO_Set_Port_Value(u8 port , u8 value);
+void GPIO_Set_Pin_Mode(u8 port , u8 pin , u8 mode);
+void GPIO_Set_Pin_Value(u8 port , u8 pin , u8 value);
+u8 GPIO_get_Pin_Value(u8 port , u8 pin);
 void GPIOF_Init(void);
 
 
