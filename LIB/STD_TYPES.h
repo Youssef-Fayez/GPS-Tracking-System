@@ -1,6 +1,5 @@
 #ifndef STD_TYPES_H_
 #define STD_TYPES_H_
-
 #include <stdint.h> 
 
 typedef uint8_t  u8;           /**< 8-bit unsigned integer type */

@@ -1,6 +1,6 @@
 #ifndef GPIO_H
 #define GPIO_H
-
+//#include "../../tm4c123gh6pm.h"
 typedef enum {
 
     GPIO_PIN0,          /**< GPIO Pin 0 */
@@ -34,19 +34,8 @@ typedef enum {
 }GPIO_MODE;
 
 void GPIO_Ports_Init(u8 port , u8 mode);
-void GPIO_Set_Port_Value(u8 port , u8 value);
-void GPIO_Set_Pin_Mode(u8 port , u8 pin , u8 mode);
 void GPIO_Set_Pin_Value(u8 port , u8 pin , u8 value);
-u8 GPIO_get_Pin_Value(u8 port , u8 pin);
+u8 GPIO_Get_Pin_Value(u8 port , u8 pin );
 void GPIOF_Init(void);
-
-
-
-
-
-
-
-
-
 
 #endif

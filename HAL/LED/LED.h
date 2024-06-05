@@ -14,25 +14,13 @@ typedef enum {
 }LED_Mode;
 
 typedef enum {
-    SW1 = 0,
-    SW2 = 4,
+    SW2 = 0,
+    SW1 = 4,
 }Switches;
 
 
-void LED_Mode(u8 Colour , u8 mode);
+void LED_Mod(u8 Colour , u8 mode);
 void LED_Change_Colour(void);
-void LED_mainfuctn(u8 distance);
-
-
-
-
-
-
-
-
-
-
-
 
 
 

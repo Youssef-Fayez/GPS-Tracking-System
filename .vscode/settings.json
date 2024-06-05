@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "std_types.h": "c",
+        "tm4c123gh6pm.h": "c",
+        "bit_math.h": "c",
+        "string.h": "c",
+        "math.h": "c",
+        "stdio.h": "c",
+        "stk.h": "c",
+        "gpio.h": "c",
+        "gps.h": "c"
+    },
+    "C_Cpp.default.compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+    "C_Cpp.errorSquiggles": "disabled"
+}
